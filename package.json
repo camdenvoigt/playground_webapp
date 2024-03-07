@@ -1,0 +1,22 @@
+{
+  "name": "playground_webapp",
+  "version": "1.0.0",
+  "description": "Creating a website to learn lots of stuff. Just a place to play around with different tech and ideas.",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camdenvoigt/playground_webapp.git"
+  },
+  "author": "Camden Voigt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camdenvoigt/playground_webapp/issues"
+  },
+  "homepage": "https://github.com/camdenvoigt/playground_webapp#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
