@@ -7,5 +7,15 @@ const message = ref('Hello World!')
 
 <template>
   <h1>{{ message }}</h1>
-  <p>Count is: {{ counter.count }}</p>
+  <p id="test">Count is: {{ counter.count }}</p>
 </template>
+
+
+<style lang="scss">
+$color: red;
+
+#test {
+  color: $color;
+}
+</style>
+

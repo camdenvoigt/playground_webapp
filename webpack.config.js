@@ -8,7 +8,7 @@ module.exports = {
     test: './client/index.js'
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: 'js/[name].bundle.js',
     path: path.resolve(__dirname, 'server', 'dist'),
     clean: true,
   },
@@ -31,6 +31,16 @@ module.exports = {
         use: [
           'vue-style-loader',
           'css-loader'
+        ]
+      },
+      // this will apply to both plain `.scss` files
+      // AND `<style lang="scss">` blocks in `.vue` files
+      {
+        test: /\.scss$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'sass-loader'
         ]
       }
     ]
