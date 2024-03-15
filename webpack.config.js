@@ -3,6 +3,7 @@ const { VueLoaderPlugin } = require('vue-loader');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: {
     home: './client/home/index.js',
     test: './client/index.js'
@@ -10,8 +11,10 @@ module.exports = {
   output: {
     filename: 'js/[name].bundle.js',
     path: path.resolve(__dirname, 'server', 'dist'),
+    publicPath: path.resolve(__dirname, 'server', 'dist'),
     clean: true,
   },
+  devtool: 'eval-cheap-module-source-map',
   module: {
     rules: [
       {

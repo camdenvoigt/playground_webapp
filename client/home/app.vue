@@ -2,7 +2,7 @@
 import { reactive, ref } from 'vue'
 
 const counter = reactive({ count: 0 })
-const message = ref('Hello World!')
+const message = ref('Hello Worldsa!')
 </script>
 
 <template>
